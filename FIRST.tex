@@ -6,7 +6,7 @@
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
-%\usepackage{xcolor}
+\usepackage{xcolor}
 \usepackage{txfonts}
 \usepackage{listings}
 \usepackage{enumitem}
@@ -53,14 +53,14 @@
 %\usepackage{tfrupee}
 %\usepackage{stmaryrd}
 %\usetkzobj{all}
-%    \usepackage{color}                                            %%
+%   \usepackage{color}                                            %%
 %    \usepackage{array}                                            %%
 %    \usepackage{longtable}                                        %%
 %    \usepackage{calc}                                             %%
 %    \usepackage{multirow}                                         %%
 %    \usepackage{hhline}                                           %%
 %    \usepackage{ifthen}                                           %%
-  %optionally (for landscape tables embedded in another document): %%
+%  optionally (for landscape tables embedded in another document): %%
 %    \usepackage{lscape}     
 %\usepackage{multicol}
 %\usepackage{chngcntr}
@@ -69,22 +69,24 @@
 %\documentclass[conference]{IEEEtran}
 %\IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
-%\newtheorem{theorem}{Theorem}[section]
-%\newtheorem{problem}{Problem}
-%\newtheorem{proposition}{Proposition}[section]
-%\newtheorem{lemma}{Lemma}[section]
-%\newtheorem{corollary}[theorem]{Corollary}
-%\newtheorem{example}{Example}[section]
-%\newtheorem{definition}[problem]{Definition}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
 %\newtheorem{thm}{Theorem}[section] 
 %\newtheorem{defn}[thm]{Definition}
 %\newtheorem{algorithm}{Algorithm}[section]
 %\newtheorem{cor}{Corollary}
-%\newcommand{\BEQA}{\begin{eqnarray}}
-%\newcommand{\EEQA}{\end{eqnarray}}
-%\newcommand{\define}{\stackrel{\triangle}{=}}
-%\theoremstyle{remark}
-%\newtheorem{rem}{Remark}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
 %\bibliographystyle{ieeetr}
 \begin{document}
 %
@@ -212,6 +214,14 @@ EE22BTECH11006
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
 %\IEEEpeerreviewmaketitle
+\begin{enumerate}
+\begin{figure}[[ht]
+	\centering
+	\includegraphics[width=\columnwidth]{./figs/Figure_1.png}
+	\caption{Figure-1}
+	\label{fig : Figure_1}
+\end{figure}
+\end{enumerate}
 
 Question 1.1.4 - The parametric form of the equation of AB is 
 
@@ -224,7 +234,7 @@ where
 \end{align}\\
 is the direction vector of AB. Find the parametric equations of AB,BC    and CA.\\
 
-Solution:  Given, 
+\solution Given, 
 \begin{align}
 \vec{A}  =
     \myvec{1 \\ -1}   
